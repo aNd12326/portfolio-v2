@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Space Grotesk Variable', sans-serif;
+    background-color: #F5F5F5;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
