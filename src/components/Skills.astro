@@ -1,0 +1,42 @@
+---
+import Html from "../icons/Html.astro";
+import Javascript from "../icons/Javascript.astro";
+import React from "../icons/React.astro";
+---
+
+<div class="min-h-[600px] flex flex-col justify-center space-y-5">
+    <h2 class="uppercase text-2xl font-extrabold">/ My skills</h2>
+    <h3 class="font-bold text-3xl">Mi lista de habilidades</h3>
+
+    <div class="lg:flex space-x-10">
+        <div
+            class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
+        >
+            <Html class="cursor-pointer size-15" />
+            <h3 class="text-3xl lg:text-5xl font-extrabold">HTML & CSS</h3>
+            <p class="font-normal text-gray-700">
+                Duis aute irure dolor in reprehenderit in voluptate.
+            </p>
+        </div>
+
+        <div
+            class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
+        >
+            <Javascript class="cursor-pointer size-15" />
+            <h3 class="text-3xl lg:text-5xl font-extrabold">Javascript</h3>
+            <p class="font-normal text-gray-700">
+                Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+        </div>
+
+        <div
+            class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
+        >
+            <React class="cursor-pointer size-15" />
+            <h3 class="text-3xl lg:text-5xl font-extrabold">React JS</h3>
+            <p class="font-normal text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </div>
+</div>
