@@ -9,24 +9,11 @@ import Javascript from "../icons/Javascript.astro";
 import React from "../icons/React.astro";
 ---
 
-<div class="max-w-[1220px] mx-auto text-[#333333] p-8">
-	<div class="flex flex-row justify-between items-center font-semibold">
-		<h1 class="text-2xl cursor-pointer">Taway</h1>
-		<ul class="hidden lg:flex gap-x-10 text-[20px]">
-			<li class="cursor-pointer">Home</li>
-			<li class="cursor-pointer">Sobre Mi</li>
-			<li class="cursor-pointer">Proyectos</li>
-			<li class="cursor-pointer">Contáctame</li>
-		</ul>
-		<!-- <img src={menu.src} width="30px" class="lg:hidden" /> -->
-
-		<button class="lg:hidden">
-			<img src={menu.src} width="30px" alt="Icono de menú" />
-		</button>
-	</div>
+<div class="max-w-[1220px] mx-auto text-[#333333]">
+	
 
 	<!-- Hero Section -->
-	<div class="py-10 min-h-[800px] flex items-center justify-center">
+	<div class="min-h-[800px] flex items-center justify-center py-7 lg:py-0 p-5 lg:p-0">
 		<div
 			class="flex flex-col space-y-10 lg:flex-row lg:items-center w-full lg:gap-10"
 		>
@@ -96,108 +83,5 @@ import React from "../icons/React.astro";
 		</div>
 	</div>
 
-	<!-- about me -->
-	<div class="lg:h-[700px] lg:flex items-center lg:gap-10">
-		<div>
-			<h2 class="text-2xl lg:text-4xl font-bold py-3 uppercase">
-				/ Sobre mi
-			</h2>
-			<h3 class="text-2xl lg:text-5xl font-bold py-3">
-				He estado desarrollando websites desde el 2010
-			</h3>
-			<p class="text-xl font-light">
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa
-				qui officia deserunt mollit anim id est laborum aute irure dolor
-				in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat.
-			</p>
-
-			<button class="py-5">
-				<h3
-					class="text-2xl font-bold cursor-pointer underline underline-offset-8"
-				>
-					Mas sobre mi
-				</h3>
-			</button>
-		</div>
-
-		<div>
-			<div class="flex text-center items-center space-x-2 py-3">
-				<strong class="text-6xl">20+</strong>
-				<h2 class="text-3xl font-bold">Proyectos</h2>
-			</div>
-
-			<p class="text-xl font-light">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-				enim ad minim veniam, quis nostrud exercitation.
-			</p>
-		</div>
-	</div>
-
-	<div class="py-8">
-		<hr />
-	</div>
-
-	<!-- skills -->
-
-	<div class="min-h-[600px] flex flex-col justify-center space-y-5">
-		<h2 class="uppercase text-2xl font-extrabold">/ My skills</h2>
-		<h3 class="font-bold text-3xl">Mi lista de habilidades</h3>
-
-		<div class="lg:flex space-x-10">
-			<div
-				class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
-			>
-				<Html class="cursor-pointer size-15" />
-				<h3 class="text-3xl lg:text-5xl font-extrabold">HTML & CSS</h3>
-				<p class="font-normal text-gray-700">
-					Duis aute irure dolor in reprehenderit in voluptate.
-				</p>
-			</div>
-
-			<div
-				class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
-			>
-				<Javascript class="cursor-pointer size-15" />
-				<h3 class="text-3xl lg:text-5xl font-extrabold">Javascript</h3>
-				<p class="font-normal text-gray-700">
-					Ut enim ad minim veniam, quis nostrud exercitation.
-				</p>
-			</div>
-
-			<div
-				class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
-			>
-				<React class="cursor-pointer size-15" />
-				<h3 class="text-3xl lg:text-5xl font-extrabold">React JS</h3>
-				<p class="font-normal text-gray-700">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- footer -->
-	<footer class="py-6">
-		<div class="mx-auto text-center">
-			<p class="text-sm">
-				&copy; 2025 Anderson VT. Todos los derechos reservados.
-			</p>
-			<div class="mt-4 flex justify-center space-x-6">
-				<GitHub
-					class="w-6 h-6 cursor-pointer hover:text-gray-400 transition-colors"
-				/>
-				<Facebook
-					class="w-6 h-6 cursor-pointer hover:text-gray-400 transition-colors"
-				/>
-				<Linkedln
-					class="w-6 h-6 cursor-pointer hover:text-gray-400 transition-colors"
-				/>
-				<Twitter
-					class="w-6 h-6 cursor-pointer hover:text-gray-400 transition-colors"
-				/>
-			</div>
-		</div>
-	</footer>
+	
 </div>
