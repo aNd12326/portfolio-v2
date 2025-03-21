@@ -2,41 +2,263 @@
 import Html from "../icons/Html.astro";
 import Javascript from "../icons/Javascript.astro";
 import React from "../icons/React.astro";
+
+const Slider = [
+    {
+        title: "HTML & CSS",
+        description: "Duis aute irure dolor in reprehenderit in voluptate.",
+        icon: Html,
+    },
+    {
+        title: "Javascript",
+        description: "Ut enim ad minim veniam, quis nostrud exercitation.",
+        icon: Javascript,
+    },
+    {
+        title: "React JS",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: React,
+    },
+    {
+        title: "Node JS",
+        description: "Excepteur sint occaecat cupidatat non proident ame.",
+        icon: React,
+    },
+    {
+        title: "Webflow",
+        description: "Duis aute irure dolor in reprehenderit in voluptate.",
+        icon: Javascript,
+    },
+    {
+        title: "Node JS",
+        description: "Excepteur sint occaecat cupidatat non proident ame.",
+        icon: React,
+    },
+    {
+        title: "Webflow",
+        description: "Duis aute irure dolor in reprehenderit in voluptate.",
+        icon: Javascript,
+    },
+    {
+        title: "Node JS",
+        description: "Excepteur sint occaecat cupidatat non proident ame.",
+        icon: React,
+    },
+    {
+        title: "Webflow",
+        description: "Duis aute irure dolor in reprehenderit in voluptate.",
+        icon: Javascript,
+    },
+];
 ---
 
-<div class="lg:max-w-[1220px] mx-auto min-h-[600px] flex flex-col justify-center space-y-5 py-7 lg:py-0 p-5 lg:p-0">
+<!-- <div
+    class="lg:max-w-[1220px] mx-auto flex flex-col justify-center space-y-5 py-7 lg:py-0 p-5 lg:p-0"
+>
     <h2 class="uppercase text-2xl font-extrabold">/ My skills</h2>
-    <h3 class="font-bold text-3xl">Mi lista de habilidades</h3>
+    <div class="flex justify-between">
+        <h3 class="font-bold text-3xl">Mi lista de habilidades</h3>
+        <div class="flex gap-10">
+            <svg
+                data-testid="geist-icon"
+                height="30"
+                stroke-linejoin="round"
+                viewBox="0 0 16 16"
+                width="30"
+                style="color: currentcolor;"
+                class="cursor-pointer"
+                id="arrow-left"
+                ><path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.46966 13.7803L6.99999 14.3107L8.06065 13.25L7.53032 12.7197L3.56065 8.75001H14.25H15V7.25001H14.25H3.56065L7.53032 3.28034L8.06065 2.75001L6.99999 1.68935L6.46966 2.21968L1.39644 7.2929C1.00592 7.68342 1.00592 8.31659 1.39644 8.70711L6.46966 13.7803Z"
+                    fill="currentColor"></path></svg
+            >
 
-    <div class="lg:flex gap-10">
-        <div
-            class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
-        >
-            <Html class="cursor-pointer size-15" />
-            <h3 class="text-3xl lg:text-5xl font-extrabold">HTML & CSS</h3>
-            <p class="font-normal text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate.
-            </p>
-        </div>
-
-        <div
-            class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
-        >
-            <Javascript class="cursor-pointer size-15" />
-            <h3 class="text-3xl lg:text-5xl font-extrabold">Javascript</h3>
-            <p class="font-normal text-gray-700">
-                Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-        </div>
-
-        <div
-            class="mt-4 max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5"
-        >
-            <React class="cursor-pointer size-15" />
-            <h3 class="text-3xl lg:text-5xl font-extrabold">React JS</h3>
-            <p class="font-normal text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+            <svg
+                data-testid="geist-icon"
+                height="30"
+                stroke-linejoin="round"
+                viewBox="0 0 16 16"
+                width="30"
+                style="color: currentcolor;"
+                class="cursor-pointer"
+                id="arrow-right"
+                ><path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.53033 2.21968L9 1.68935L7.93934 2.75001L8.46967 3.28034L12.4393 7.25001H1.75H1V8.75001H1.75H12.4393L8.46967 12.7197L7.93934 13.25L9 14.3107L9.53033 13.7803L14.6036 8.70711C14.9941 8.31659 14.9941 7.68342 14.6036 7.2929L9.53033 2.21968Z"
+                    fill="currentColor"></path></svg
+            >
         </div>
     </div>
+
+    <div
+        id="skills-container"
+        class="w-full lg:flex gap-10 overflow-x-hidden scroll-smooth mx-auto lg:pt-10"
+    >
+        {
+            Slider.map((slide, index) => (
+                <div class="mt-4 min-w-[300px] p-6 bg-white border border-gray-200 rounded-3xl shadow-sm h-[500px] flex flex-col justify-center space-y-5">
+                    <slide.icon class="cursor-pointer size-15" />
+                    <h3 class="text-3xl lg:text-5xl font-extrabold">
+                        {slide.title}
+                    </h3>
+                    <p class="font-normal text-gray-700">{slide.description}</p>
+                </div>
+            ))
+        }
+    </div>
+</div> -->
+<!-- <div class="flex items-center justify-center h-[1150px]">
+    <div class="max-w-[1220px]">
+        <div class="pb-10">
+            <h2 class="uppercase text-2xl font-extrabold">/ My skills</h2>
+            <div class="flex justify-between">
+                <h3 class="font-bold text-3xl">Mi lista de habilidades</h3>
+                <div class="flex gap-10">
+                    <svg
+                        data-testid="geist-icon"
+                        height="30"
+                        stroke-linejoin="round"
+                        viewBox="0 0 16 16"
+                        width="30"
+                        style="color: currentcolor;"
+                        class="cursor-pointer"
+                        id="arrow-left"
+                        ><path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.46966 13.7803L6.99999 14.3107L8.06065 13.25L7.53032 12.7197L3.56065 8.75001H14.25H15V7.25001H14.25H3.56065L7.53032 3.28034L8.06065 2.75001L6.99999 1.68935L6.46966 2.21968L1.39644 7.2929C1.00592 7.68342 1.00592 8.31659 1.39644 8.70711L6.46966 13.7803Z"
+                            fill="currentColor"></path></svg
+                    >
+
+                    <svg
+                        data-testid="geist-icon"
+                        height="30"
+                        stroke-linejoin="round"
+                        viewBox="0 0 16 16"
+                        width="30"
+                        style="color: currentcolor;"
+                        class="cursor-pointer"
+                        id="arrow-right"
+                        ><path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.53033 2.21968L9 1.68935L7.93934 2.75001L8.46967 3.28034L12.4393 7.25001H1.75H1V8.75001H1.75H12.4393L8.46967 12.7197L7.93934 13.25L9 14.3107L9.53033 13.7803L14.6036 8.70711C14.9941 8.31659 14.9941 7.68342 14.6036 7.2929L9.53033 2.21968Z"
+                            fill="currentColor"></path></svg
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div id="skills-container" class="flex gap-x-10 h-[500px]">
+            {
+                Slider.map((slide, index) => (
+                    <div class="mt-4 min-w-[300px] p-6 bg-white border border-gray-200 rounded-3xl shadow-sm flex flex-col justify-center space-y-5">
+                        <slide.icon class="cursor-pointer size-15" />
+                        <h3 class="text-3xl lg:text-5xl font-extrabold">
+                            {slide.title}
+                        </h3>
+                        <p class="font-normal text-gray-700">
+                            {slide.description}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</div> -->
+
+<div class="py-[240px] flex items-center justify-center mx-auto overflow-x-hidden">
+    <div class="lg:w-[1220px] w-full p-5">
+        <h2 class="uppercase text-2xl font-extrabold">/ My skills</h2>
+        <div class="flex justify-between py-5">
+            <h2 class="lg:text-5xl text-2xl font-extrabold mb-2">My extensive list of skills</h2>
+            <div class="flex gap-10">
+                <button id="arrow-left" class="cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                    <svg data-testid="geist-icon" height="30" stroke-linejoin="round" viewBox="0 0 16 16" width="30" style="color: currentcolor;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46966 13.7803L6.99999 14.3107L8.06065 13.25L7.53032 12.7197L3.56065 8.75001H14.25H15V7.25001H14.25H3.56065L7.53032 3.28034L8.06065 2.75001L6.99999 1.68935L6.46966 2.21968L1.39644 7.2929C1.00592 7.68342 1.00592 8.31659 1.39644 8.70711L6.46966 13.7803Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+                <button id="arrow-right" class="cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                    <svg data-testid="geist-icon" height="30" stroke-linejoin="round" viewBox="0 0 16 16" width="30" style="color: currentcolor;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53033 2.21968L9 1.68935L7.93934 2.75001L8.46967 3.28034L12.4393 7.25001H1.75H1V8.75001H1.75H12.4393L8.46967 12.7197L7.93934 13.25L9 14.3107L9.53033 13.7803L14.6036 8.70711C14.9941 8.31659 14.9941 7.68342 14.6036 7.2929L9.53033 2.21968Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="skills-container" class="flex gap-x-10 h-[600px] transition-transform duration-500 ease-in-out py-10">
+            {
+                Slider.map((slide, index) => (
+                    <div class="mt-4 min-w-[400px] p-20 bg-white border border-gray-200 rounded-3xl shadow-sm flex flex-col justify-center space-y-5">
+                        <slide.icon class="cursor-pointer size-15" />
+                        <h3 class="text-3xl lg:text-5xl font-extrabold">
+                            {slide.title}
+                        </h3>
+                        <p class="font-normal text-gray-700">
+                            {slide.description}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+
+        <!-- <div class="flex gap-10">
+            <button id="arrow-left" class="cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                <svg data-testid="geist-icon" height="30" stroke-linejoin="round" viewBox="0 0 16 16" width="30" style="color: currentcolor;">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46966 13.7803L6.99999 14.3107L8.06065 13.25L7.53032 12.7197L3.56065 8.75001H14.25H15V7.25001H14.25H3.56065L7.53032 3.28034L8.06065 2.75001L6.99999 1.68935L6.46966 2.21968L1.39644 7.2929C1.00592 7.68342 1.00592 8.31659 1.39644 8.70711L6.46966 13.7803Z" fill="currentColor"></path>
+                </svg>
+            </button>
+            <button id="arrow-right" class="cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                <svg data-testid="geist-icon" height="30" stroke-linejoin="round" viewBox="0 0 16 16" width="30" style="color: currentcolor;">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53033 2.21968L9 1.68935L7.93934 2.75001L8.46967 3.28034L12.4393 7.25001H1.75H1V8.75001H1.75H12.4393L8.46967 12.7197L7.93934 13.25L9 14.3107L9.53033 13.7803L14.6036 8.70711C14.9941 8.31659 14.9941 7.68342 14.6036 7.2929L9.53033 2.21968Z" fill="currentColor"></path>
+                </svg>
+            </button>
+        </div> -->
+        
+    </div>
 </div>
+
+<script>
+const skillsContainer = document.getElementById('skills-container');
+const arrowLeft = document.getElementById('arrow-left');
+const arrowRight = document.getElementById('arrow-right');
+const slides = document.querySelectorAll('#skills-container > div'); // Selecciona las tarjetas
+
+let currentIndex = 0;
+const slideWidth = slides[0].offsetWidth + 40; // Ancho de cada tarjeta + gap
+
+function updateCarousel() {
+    skillsContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+arrowLeft.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+        console.log('translateX -',currentIndex * slideWidth);
+    }
+});
+
+arrowRight.addEventListener('click', () => {
+    if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateCarousel();
+        // console.log(slides.length);
+        // console.log(currentIndex);
+        // console.log(currentIndex * slideWidth);
+        // console.log(slideWidth);
+        console.log('translateX -',currentIndex * slideWidth);
+        // console.log(currentIndex);
+        console.log(slideWidth);
+    }
+
+    if(slides.length - 1 == currentIndex){
+        currentIndex = -1
+    }
+
+    
+});
+</script>
